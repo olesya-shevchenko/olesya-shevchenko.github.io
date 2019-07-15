@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/profile1.css">
+</head>
+<body>
+    <div class="page">
+        <div class="content">
+             <!--HEADER-->
+             <div class="wrapper">
+                <header class="header">
+                    <div class="header-container">
+                        <div class="header-logo">
+                            <a href="./main.html">
+                                <img src="./img/logo .png" alt="" class="logo">
+                            </a>
+                        </div>
+                        <div class="header-menu">
+                            <nav class="nav">
+                                <ul class="nav__list">
+                                    <li class="nav__list__item">
+                                        <a href="./ways.html" class="item-link item-rout">Маршруты</a>
+                                    </li>
+                                    <li class="nav__list__item">
+                                        <a href="./stepone.html" class="item-link item-buy"><p>
+                                            Покупка и 
+                                        </p>
+                                            <p>
+                                                бронирование
+                                            </p></a>
+                                    </li>
+                                    <li class="nav__list__item">
+                                        <a href="prog.html" class="item-link item-add"><p>
+                                            Дополнительные 
+                                        </p>
+                                            <p>
+                                                программы
+                                            </p></a>
+                                    </li>
+                                    <li class="nav__list__item">
+                                        <a href="./inf.html" class="item-link item-info">Информация</a>
+                                    </li>
+                                    
+                                    <li class="nav__list__item">
+                            <a href="./profile1.html" class="btn__profile"> 
+                            <img src="./img/profile-icon.png" alt="" class="btn__profile-img">
+                        </a>
+                                      
+                                    </li>
+                                </ul>
+                            </nav>
+                    
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="main__content">
+                <div class="main__content__banner">
+                    <div class="banner__inner">
+                        <div class="banner__block">
+                            <img src="./img/user-photo.png" alt="" class="banner__block-img">
+                        </div>
+                        <div class="banner__block banner__block-tablets">
+                            <div class="banner__block-text">
+                                <div class="banner__block-desc"><b>Иванов Землянин</b></div>
+                                <div class="banner__block-desc"><b>Ваш ID:</b>12 345 67 9</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__content__desc">
+                    <div class="desc__line">
+                       <nav class="desc__line-nav">
+                           <ul class="line__list">
+                             <li class="line__item">
+                                 <div class="line__item__link"  onclick="openbox('box')"; return false><b>Информация о полете</b></div>
+                             </li>
+                             <li class="line__item">
+                                 <div  class="line__item__link" onclick="box('box1')"; return false><b>Мои данные</b></div>
+                             </li>
+                             <li class="line__item">
+                                 <a href="prog.html" class="line__item__link"><b>Допольнительные программы</b></a>
+                             </li>
+                           </ul>
+                       </nav>
+                    </div>
+                    <div class="desc__container">
+                        <div class="desc__container-block">
+                            <div class="container__block">
+                                <div id="box" style="display:block" class="container__block-one">
+                                    <div class="container-block-row container-block-row-special">
+                                        <div class="row__text row__text-uniq">
+                                            <div class="row__title "><b>Мой Маршрут</b></div>
+                                            <div class="row__inf">Земля- Сатурн</div>
+                                        </div>
+                                        <div class="row__text row__text-special">
+                                            <div class="row__title"><b>Дата и время</b></div>
+                                            <div class="row__inf"> 06 июл 2019г. 06:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="row-line"></div>
+                                    <div class="container-block-row">
+                                        <div class="row__text">
+                                            <div class="row__title"><b>Информация о пассажире</b></div>
+                                            <div class="row__inf"> <span class="row__inf-special">ФИО</span>: Иванов  Иванович Землянин</div><!--Maybe smt wrong with FIO-->
+                                        </div>
+                                    </div>
+                                    <div class="row-line"></div>
+                                    <div class="container-block-row">
+                                        <div class="row__text">
+                                            <div class="row__title"><b>Номер рейса</b></div>
+                                            <div class="row__inf">123456Cosm</div>
+                                        </div>
+                                    </div>
+                                    <div class="row-line"></div>
+                                    <div class="container-block-row">
+                                        <div class="row__text">
+                                            <div class="row__title"><b>Ваш билет</b></div>
+                                            <div class="row__inf">
+                                                <img src="./img/ticket.png" alt="" class="inf-ticket">
+                                                <div class="inf__btn">
+                                                    <a href="#" class="inf__btn-link"><b>Печать</b></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="box1" style="display:none" class="container__block-two">
+                                    <div class="container-block-row container-block-row-special">
+                                        <div class="row__text row__text-uniq">
+                                            <div class="row__title "><b>Персональные данные</b></div>
+                                            <div class="row__inf">Иванов Землянин / Ivanov Zemlyanin</div>
+                                            <div class="row__inf"> <span class="row__inf-special">Дата рождения</span>: 12 янв 19000г </div>
+                                            <div class="row__inf"> <span class="row__inf-special">Пол</span>: мужской</div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="row-line"></div>
+                                    <div class="container-block-row">
+                                        <div class="row__text">
+                                            <div class="row__title"><b>Контактная информация</b></div>
+                                            <div class="row__inf inf-uniq">Указанные данные могут понадобиться для уточнения состояния брони, погоды, оповещений о статусе заказа, 
+                                                    высылки карты</div>
+                                            <div class="row__inf"> <span class="row__inf-special">Тел</span>:+7 990 888 78 67</div>
+                                            <div class="row__inf"> <span class="row__inf-special">Emai</span>:zemlyanin@mail.ru</div>
+                                        </div>
+                                    </div>
+                                    <div class="row-line"></div>
+                                    <div class="container-block-row">
+                                        <div class="row__text">
+                                            <div class="row__title"><b>Документы</b></div>
+                                            <div class="row__inf"> <span class="row__inf-special">Внутренний паспорт</span>: 1122 334456 </div>
+                                            <div class="row__inf"> <span class="row__inf-special">Космическая виза</span>: cosmus1</div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                
+                <div class="footer__wrap">
+                    <div class="footer__wrap-content">
+                        <div class="footer__block footer__block-tablets">
+                            <ul class="footer__block-list">
+                                <li class="footer__block-item">
+                                    <a href="./main.html#about" class="footer__block-item-link">О нас</a>
+                                </li>
+                                <li class="footer__block-item">
+                                    <a href="./ways.html" class="footer__block-item-link">Маршруты</a>
+                                </li>
+                                <li class="footer__block-item">
+                                    <a href="./inf.html" class="footer__block-item-link">Информация</a>
+                                </li>
+                                <li class="footer__block-item">
+                                    <a href="prog.html" class="footer__block-item-link">Дополнительные программы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block footer__block-tablets">
+                            <ul class="footer__block-list">
+                                <li class="footer__block-item">
+                                    <a href="#" class="footer__block-item-link">Обратная связь</a>
+                                </li>
+                                <li class="footer__block-item">
+                                    <span>Бесплатно по России 8 800 000–0101</span>
+                                </li>
+                                <li class="footer__block-item footer__block-item-uniqe">
+                                    <a href="#" class="footer__block-item-link footer-link-uniqe"><b>Звонок Онлайн</b></a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                        <div class="footer__block footer__block-ph">
+                                <div class="social">
+                                        <div class="social-media-elem">
+                                               <span class="social-media-text">Найдите нас</span>
+                                            <ul class="social_list">
+                                              <li  class="social_item">
+                                                    <a href="https://www.facebook.com/" class="social_links ">
+                                                        <div class="social-button icon-fc">
+                                                         <img src="./img/fb_white .png" alt="" class="img-icon">
+                                                        </div>
+                                                    </a>
+                                                
+                                              </li>
+                                              <li  class="social_item">
+                                                    <a href="https://www.instagram.com" class="social_links ">
+                                                            <div class="social-button icon-inst">
+                                                                <img src="./img/inst-white — копия.png" alt="" class="img-icon">
+                                                            </div>
+                                                    </a>
+                                               
+                                                   </li>
+                                              <li  class="social_item">
+                                                    <a href="https://vk.com/" class="social_links">
+                                                            <div class="social-button icon-vk">
+                                                                <img src="./img/vk_white .png" alt="" class="img-icon">
+                                                            </div>
+                                                    </a>
+                                              </li>
+                                              </ul>
+                                            </div>
+                                            
+                                       </div>
+                        </div>
+                    </div>
+                   
+                    <div class="footer__wrap-line">
+                            © 2019. Cosmus — Все пpава защищены
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+            function openbox(box){
+                display = document.getElementById('box').style.display;
+                if(display == "block") {
+                    document.getElementById('box1').style.display = "none";
+                    document.getElementById('box').style.display = "block";
+                } else {
+                    document.getElementById('box').style.display = "block";
+                    document.getElementById('box1').style.display = "none";
+                }
+            }
+            function box(box1){
+                display = document.getElementById('box1').style.display;
+                if(display == "none") {
+                    document.getElementById('box').style.display = "none";
+                    document.getElementById('box1').style.display = "block";
+                } else {
+                    document.getElementById('box1').style.display = "none";
+                    document.getElementById('box').style.display = "block";
+                }
+            }
+            
+            
+            
+            
+            
+                </script>
+</body>
+</html>

@@ -1,0 +1,581 @@
+//breakponts
+$tablets: 768px;
+$phones: 480px;
+@import "./media.scss";
+@import url("./normalize.css");
+@font-face{
+    font-family: 'HelveticaRegular';
+    src: url(../fonts/HelveticaRegular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.html,body{
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 100%; 
+}
+.body{
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 100%; 
+    position: relative;
+    font-family: Helvetica, sans-serif;
+}
+.page{
+    position: relative;
+  
+    width: 100%;
+    height: 100%; 
+    min-height: 40.625rem; 
+    min-width: 18.75rem;
+    margin: 0 auto;
+}
+.content{
+   
+    margin: 0 auto;
+   
+}
+.wrapper{
+  position: relative;
+  width: 100%; 
+  margin: 0 auto;
+  height: 5rem;
+  background: #11185d;
+}
+.header{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 63.75rem;
+    min-width: 18.75rem;
+    width: 95%;
+   
+}
+.header-container{
+    align-items: center;
+    position: static;
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    margin: 0 auto;
+}
+.header-logo{
+    padding-left: 3rem;
+    padding-top: .65rem;
+    @include phones{
+        padding-left: 1rem;
+        padding-top: .45rem;
+    }
+}
+.header-menu{
+    padding-top: 1.0625rem;
+    position: relative;
+    text-align: right;
+    display: flex;
+    flex:1;
+    align-items: center;
+    width: 100%;
+  }
+  .nav{
+      vertical-align: middle;
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+  }
+  .nav__list{
+      list-style: none;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      margin-right: 3rem;
+      font-family: 'HelveticaRegular', sans-serif;
+  }
+  .nav__list__item{
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+}
+    .item-link{
+        color:white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: 'HelveticaRegular', sans-serif;
+        white-space: nowrap;
+      
+        &:hover{
+            text-decoration: underline;
+        }
+        @include phones{
+            font-size: 11px;
+        }
+    
+    }
+    .item-buy{
+        flex-direction: column;
+        line-height: 0.001rem;
+    }
+    .item-add{
+        flex-direction: column;
+        line-height: 0.01rem;
+    }
+    .btn__enter{
+        color: #d9d9d9;
+        text-decoration: none;
+        font-family: 'HelveticaBold', sans-serif;
+        border: 2px solid #595c7a;
+        border-radius: 0.3125rem;
+        padding: 6px 6px;
+        font-size: 13px;
+    }
+    .main__content{
+        width: 100%;
+        
+    }
+    .main__content__banner{
+        background: url(../img/bc-inf.png) center center / cover no-repeat;
+        display: flex;
+       width: 100%;
+
+    }
+    .banner__inner{
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+        max-width: 63.75rem;
+        min-width: 18.75rem;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        @include tablets{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+.banner__block{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-right: 9rem;
+    @include tablets{
+        margin-right: 0rem;
+    }
+}
+.banner__block-tablets{
+    padding-top: 0rem;
+}
+.banner__block-img{
+    width: 14rem;
+}
+.banner__block-text{
+    color: white;
+    line-height: 7px;
+    font-size: 38px;
+    font-family:Helvetica, sans-serif;
+    letter-spacing: 2px;
+    @include tablets{
+        font-size: 22px;
+    }
+}
+.main__content__desc{
+    width: 100%;
+}
+.desc__links{
+    margin-top: -1rem;
+    background: url(../img/bc-links.png)center center / cover no-repeat;
+}
+.desc__links-block{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.desc__links-list{
+    list-style: none;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  
+
+}
+.desc__links-text{
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    font-family: 'HelveticaRegular',sans-serif;
+    font-size: 14px;
+    color: #ffefc3;
+  margin-top: 2rem;
+  @include tablets{
+    width: 50%;
+  }
+  @include phones{
+      width: 64%;
+  }
+}
+.desc__links-item{
+    margin-bottom: .7rem;
+}
+.row-link{
+    text-decoration: none;
+    color: white;
+    font-family:Helvetica, sans-serif;
+    font-size: 15px;
+    margin-right: 2rem;
+    &:hover{
+        text-decoration: underline;
+    }
+    @include tablets{
+        margin-right: 1rem;
+    }
+    @include phones{
+        font-size: 13px;
+    }
+
+}
+.desc__block{
+    margin: 0 auto;
+}
+.desc__block-text{
+    margin: 0 auto;
+    max-width: 44.75rem;
+    min-width: 18.75rem;
+    @include tablets{
+        max-width: 32.75rem;
+    }
+    @include phones{
+        max-width: 23.75rem;
+    }
+}
+.decs__block-title{
+    text-align: center;
+    font-size: 37px;
+    font-family:Helvetica, sans-serif;
+    color: #11185d;
+}
+.desc__block-paragr{
+    font-size: 16px;
+    font-family:'HelveticaRegular', sans-serif;
+    color: #11185d;
+    color: #595c7a;
+    margin-top: 1rem;
+}
+.planet{
+    flex-direction: row-reverse;
+    display: flex;
+    margin-right: 8rem;
+    @include tablets{
+        margin-right: 1rem;
+    }
+}
+.planet-two{
+    margin-top: -11rem;
+    margin-left: 5rem;
+    @include tablets{
+        margin-top: -1rem;
+    margin-left: -1rem;
+    }
+    
+}
+.pink-planet{
+    width: 8rem;
+    @include tablets{
+        width: 4rem;
+    }
+}
+.pink-planet2{
+    width: 5rem;
+    @include tablets{
+        width: 4rem;
+    }
+}
+.desc__block-first{
+    margin-top: -3rem;
+}
+.desc__block-sec{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-top: -3rem;
+    background: url(../img/bc-how.png)center center / cover no-repeat;
+}
+.text-sec{
+    margin-top: 1.4rem;
+}
+.paragr-sec{
+    margin-top: 4.8rem;
+}
+.img-visa{
+    @include phones{
+        width: 21rem;
+    }
+}
+.desc__block-third{
+    margin-top: 2rem;
+}
+.desc__block-img{
+    text-align: center;
+    margin-top: 2rem;
+}
+.desc__block-four{
+    margin-top: 3rem;
+    max-width: 53.75rem;
+    max-width: 66.75rem;
+    min-width: 18.75rem;
+    background: url(../img/bc-custom.png)center center / cover no-repeat;
+}
+.block-text-custom{
+    max-width: 44.75rem;
+    min-width: 18.75rem;
+    @include tablets{
+        max-width: 32.75rem;
+    }
+    @include phones{
+        max-width: 23.75rem;
+    }
+}
+.paragr-custom{
+    padding-bottom: 2rem;
+}
+.purple{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -4rem;
+    margin-right: 4rem;
+    @include phones{
+        margin-right: 1rem;
+    }
+}
+.purple-planet{
+    width: 9rem;
+    @include phones{
+        width: 5rem;
+    }
+}
+.desc__block-parts{
+    display: flex;
+    flex-direction: row;
+    margin-top:1rem;
+    @include phones{
+        flex-direction: column-reverse;
+    }
+}
+.block__part-img{
+    padding-right: 3rem;
+    margin-left: -9rem;
+    @include tablets{
+        margin-left: -2rem;
+    }
+    @include phones{
+        text-align: center;
+        margin-left: 0rem;
+    }
+}
+.part__img{
+    width: 15rem;
+    @include tablets{
+        width: 14rem;
+    }
+}
+.block__part-text{
+    font-size: 16px;
+    font-family: 'HelveticaRegular', sans-serif;
+    color: #11185d;
+}
+.title-smile{
+    align-items: center;
+    text-align: center;
+    margin-top: -2rem;
+}
+.img__smile{
+    width: 22rem;
+}
+.desc__block-six{
+    margin-top: -3rem;
+    background: url(../img/bc-fod.png)center center / cover no-repeat;
+}
+.desc__block-text-safe{
+    padding-top: 7rem;
+    @include phones{
+        padding-top: 9rem;
+    }
+}
+.desc__block-food{
+    margin-top: 4rem;
+    padding-bottom: 5rem;
+}
+.block__part-paragr{
+    font-size: 16px;
+    font-family: 'HelveticaRegular', sans-serif;
+    color: #11185d;
+    margin-top: 1rem;
+}
+.part__img-cow{
+    margin-top: -5rem;
+    @include tablets{
+        margin-top: -3rem;
+    }
+    @include phones{
+        margin-top: 2rem;
+    }
+}
+.img__cow{
+    width: 13rem;
+    @include tablets{
+        width: 10rem;
+    }
+
+}
+.desc__block-map{
+    background: url(../img/bc-maps.png)center center / cover no-repeat;
+    @include tablets{
+        margin-top: 3rem;
+    }
+}
+.desc__block-text-link{
+    margin-top: .5rem;
+}
+.text-link{
+    color: #a3eaee;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    &:hover{
+        color: #fdf0c0;
+    }
+}
+.map-img{
+    @include phones{
+        width: 15rem;
+    }
+}
+.footer{
+    position: relative;
+    display: block;
+    width: 100%;
+    }
+    .footer__wrap{
+        position: absolute;
+        background: url(../img/bc-footer.png)center center / cover no-repeat;
+        margin-top: -7rem;
+        width: 100%;
+        height: 25rem;
+        @include tablets{
+            height: 26rem;
+        }
+    }
+    .footer__wrap-content{
+    
+      margin: 0 auto;
+      margin-top: 7rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 57.75rem;
+      min-width: 18.75rem;
+      @include tablets{
+        margin-right: 1rem;
+        margin-left: 3rem;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 4rem;
+      }
+      
+    
+    }
+    .footer__block-ph{
+        @include phones{
+            margin-top: 0.7rem
+        }
+    }
+    .footer__block-list{
+        list-style: none;
+        padding-inline-start: 0px;
+    }
+    .footer__block-item{
+        margin-bottom: 0.3rem;
+        color: white;
+        font-size: 16px;
+        font-family: 'HelveticaRegular', sans-serif;
+        @include phones{
+            font-size: 14px;
+        }
+    }
+    .footer__block-item-uniqe{
+        margin-top: 1.7rem;
+        @include phones{
+            margin-top: 0.7rem;
+        }
+    }
+    .footer__block-item-link{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-family: 'HelveticaRegular', sans-serif;
+        &:hover{
+            text-decoration: underline;
+        }
+        @include phones{
+            font-size: 14px;
+        }
+    }
+    .footer-link-uniqe{
+        color: #a6eaed;
+        border-radius: 2px;
+        border: 2px solid #ebebeb;
+        border-radius: 0.3125rem;
+        padding: 12px 18px;
+        text-decoration: none;
+      
+        &:hover{
+            text-decoration: none;
+        }
+        @include  phones{
+            padding: 8px 12px;
+        }
+    
+    }
+    .social{
+        display: flex;
+        padding-right: 2.5rem;
+        align-items: center;
+       
+    }
+    .social-media-text{
+        color: white;
+        font-size: 16px;
+        font-family: 'HelveticaRegular',sans-serif;
+      
+    }
+    .social_list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-inline-start: 0px;
+    }
+    .social_item{
+        margin-right: .8rem;
+    }
+    
+    .footer__wrap-line{
+        margin-top: 6rem;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-family: 'HelveticaRegular',sans-serif;
+        font-size:12px;
+        @include tablets{
+            margin-top: 0rem;
+            font-size:10px;
+            padding-bottom: 0.3rem;
+           
+        }
+    }
+    .img-icon{
+        width: 2rem;
+    }
