@@ -101,8 +101,14 @@
                                 </li>
                             </ul>
                             <div class="block__about-btn">
-                                   <a href="tel:8 800 000–0101" class="about-btn">Связаться с нами</a>
+                                   <a href="#" id="myBtn" class="about-btn">Связаться с нами</a>
                             </div>
+                            <div class="modal" id="myModal">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <p class="close-text"><b>Да не парьтесь! Мы сами Вас найдем :)</b></p>
+                                    </div>
+                                </div>
                         </div>
                    </div>
                    <div class="desc__block-business">
@@ -137,8 +143,14 @@
                                     </li>
                                 </ul>
                                 <div class="block__about-btn">
-                                       <a  href="tel:8 800 000–0101" class="about-btn">Связаться с нами</a>
+                                       <a  href="#" id="myBtn" class="about-btn">Связаться с нами</a>
                                 </div>
+                                <div class="modal" id="myModal">
+                                        <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <p class="close-text"><b>Да не парьтесь! Мы сами Вас найдем :)</b></p>
+                                        </div>
+                                    </div>
                             </div>
                        </div>
                    </div>
@@ -221,4 +233,22 @@
         </div>
     </div>
 </body>
+<script>
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+    
+        btn.onclick = function () {
+            modal.style.display = "block";
+    
+        }
+        span.onclick = function (){
+            modal.style.display = "none"
+        }
+        window.onclick = function(event) {
+            if (event.target == modal){
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </html>

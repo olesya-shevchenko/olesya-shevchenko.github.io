@@ -85,7 +85,13 @@
                                                 <input type="password" class="form__input form__input-pass" >
                                         </label>
                                     </div>
-                                    <div class="form__line profile-link">Забыли пароль?</div>
+                                    <a href="#"  id="myBtn"class="form__line profile-link">Забыли пароль?</a>
+                                    <div class="modal" id="myModal">
+                                            <div class="modal-content">
+                                                <span class="close">&times;</span>
+                                                <p class="close-text"><b>Ну и фиг с ним! Заходите без него ;)</b></p>
+                                            </div>
+                                        </div>
                                         <div class="buttons">
                                             <div class="buttons__link">
                                                 <a href="./reg.html" class="link__enter"><b>Регистрация</b></a>
@@ -104,4 +110,22 @@
         </div>
     </div>
 </body>
+<script>
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+    
+        btn.onclick = function () {
+            modal.style.display = "block";
+    
+        }
+        span.onclick = function (){
+            modal.style.display = "none"
+        }
+        window.onclick = function(event) {
+            if (event.target == modal){
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </html>
