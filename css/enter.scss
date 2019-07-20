@@ -290,11 +290,39 @@ $phones: 480px;
 .form__line{
     margin-top: 0.8rem;
     text-align: end;
-    margin-right: 11.3rem;
+    margin-left: 10rem;
     @include phones{
         margin-right: 7.3rem;
     }
 }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+ }
+ .modal-content{
+     background-color: aliceblue;
+     margin: 15%  auto;
+     padding: 20px;
+     border:1px solid #888;
+     width: 50%;
+    
+ }
+ .close{
+     float: right;
+     font-size: 30px;
+     cursor: pointer;
+ }
+ .close-text{
+     font-family:  Helvetica, sans-serif;
+     color: #181d50;
+ }
 .link__enter{
     text-decoration: none;
     font-family: 'HelveticaRegular', sans-serif;
